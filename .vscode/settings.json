@@ -1,0 +1,28 @@
+{
+  "files.associations": {
+    "*.html": "html-hubl",
+    "*.css": "css-hubl"
+  },
+  "editor.formatOnSave": true,
+  "[html-hubl]": {
+    "editor.defaultFormatter": "HubSpot.hubl",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "html.format.wrapLineLength": 120,
+  "html.format.wrapAttributes": "auto",
+  "html.format.indentHandlebars": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 100,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true
+}
