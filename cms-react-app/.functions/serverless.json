@@ -1,26 +1,26 @@
+
 {
-  "runtime": "nodejs18.x",
-  "version": "1.0",
-  "environment": {},
-  "secrets": [],
-  "endpoints": {
+  "appFunctions": {
     "parrot": {
-      "method": "GET",
-      "file": "parrot-function.js"
-    },
-    "getJoke": {
-      "method": "GET",
-      "file": "joke.js"
-    },
-    "pokemon": {
-      "method": "GET",
-      "file": "pokemon.js"
-    },
-    "parrotFunction": {
-      "file": "parrot-function.js",
+       "file": "parrot-function.js",
+       "endpoint": {
+          "path": "parrot",
+          "method": ["GET"]
+        }
+     }, 
+     "joke": {
+      "file": "joke.js",
       "endpoint": {
-        "path": "parrot",
-        "method": ["GET"]
+        "path": "getJoke",
+          "method": ["GET"]
       }
+     },
+     "pokemon":{
+      "file" : "pokemon.js",
+      "endpoint":{
+        "path": "pokemon",
+          "method": ["GET"]
+      }
+     }
   }
 }
