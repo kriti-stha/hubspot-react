@@ -1,0 +1,11 @@
+README.md
+tsconfig.json
+yarn.lock
+dist
+package-lock.json
+hubspot.config.yml
+.vscode
+cms-react-app/.functions
+cms-react-app/.eslintrc.js
+cms-react-app/.eslintrc
+cms-react-app/.prettierrc
