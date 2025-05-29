@@ -2,3 +2,5 @@ README.md
 tsconfig.json
 yarn.lock
 dist
+package-lock.json
+hubspot.config.yml
