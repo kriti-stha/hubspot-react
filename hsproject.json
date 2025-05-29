@@ -1,5 +1,5 @@
 {
   "name": "cms-react-project",
-  "srcDir": "cms-react-app",
+  "srcDir": ".",
   "platformVersion": "2025.1"
 }

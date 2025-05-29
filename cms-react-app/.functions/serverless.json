@@ -1,5 +1,5 @@
 {
-  "runtime": "nodejs18.x",
+  "runtime": "nodejs20.x",
   "version": "1.0",
   "appFunctions": {
     "parrot": {
