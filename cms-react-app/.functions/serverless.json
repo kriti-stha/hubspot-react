@@ -1,5 +1,7 @@
 
 {
+  "runtime": "nodejs18.x",
+  "version": "1.0.0",
   "appFunctions": {
     "parrot": {
        "file": "parrot-function.js",
