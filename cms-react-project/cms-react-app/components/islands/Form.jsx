@@ -1,4 +1,7 @@
 import { Button } from '../ui/button.tsx'
+import { Alert } from '../ui/alert.tsx'
+
+import '../../styles/globals.css'
 
 export default function Form() {
   return (
@@ -9,6 +12,8 @@ export default function Form() {
       </Button>
       <Button variant="outline">Outline</Button>
       <Button variant="destructive">Delete</Button>
+      <Button variant="">hi</Button>
+      <Alert variant="destructive">waddup</Alert>
     </div>
   )
 }
