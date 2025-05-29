@@ -4,3 +4,4 @@ dist
 package-lock.json
 .hsignore
 .env
+.DS_Store
