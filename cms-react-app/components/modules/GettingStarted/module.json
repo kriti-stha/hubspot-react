@@ -1,0 +1,25 @@
+{
+  "name": "Getting Started",
+  "label": "Getting Started",
+  "css_assets": [],
+  "js_assets": [],
+  "other_assets": [],
+  "fields": [
+    {
+      "name": "heading",
+      "label": "Heading",
+      "required": false,
+      "locked": false,
+      "type": "text",
+      "default": "Getting Started with React in HubSpot"
+    },
+    {
+      "name": "content",
+      "label": "Content",
+      "required": false,
+      "locked": false,
+      "type": "richtext",
+      "default": "This is a sample module to help you get started with React in HubSpot."
+    }
+  ]
+} 
