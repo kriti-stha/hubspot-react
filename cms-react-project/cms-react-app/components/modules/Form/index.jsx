@@ -1,20 +1,17 @@
-import { ModuleFields, TextField } from "@hubspot/cms-components/fields";
-import PersonalDetailsForm from "../../islands/PersonalDetailsForm.jsx?island";
-import { Island } from "@hubspot/cms-components";
+import { ModuleFields, TextField } from '@hubspot/cms-components/fields'
+import PersonalDetailsForm from '../../islands/PersonalDetailsForm.jsx?island'
+import { Island } from '@hubspot/cms-components'
+import Form from '../../islands/Form?island'
 
 export const meta = {
-  label: "Form",
-  icon: "form",
-  description: "A form to collect personal details",
-};
+  label: 'Form',
+  icon: 'form',
+  description: 'A form to collect personal details',
+}
 
-export const fields = 
+export const fields = (
   <ModuleFields>
-    <TextField
-      name="title"
-      label="Title"
-      default="Personal Details"
-    />
+    <TextField name="title" label="Title" default="Personal Details" />
     <TextField
       name="description"
       label="Description"
@@ -35,14 +32,13 @@ export const fields =
       label="Error Message"
       default="There was an error submitting your details. Please try again."
     />
-  </ModuleFields>;
+  </ModuleFields>
+)
 
 export function Component() {
   return (
     <div>
-      <Island module={PersonalDetailsForm} />
+      <Island module={Form} />
     </div>
-  );
+  )
 }
-
-
