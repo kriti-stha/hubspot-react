@@ -1,10 +1,7 @@
-// Import stylesheet
-import styles from '../../styles/counter.module.css';
+import styles from 'cms-react-app/styles/counter.module.css';
 
-// Import useState hook to update the count number
 import { useState } from 'react';
 
-// Create a function to add numbers together
 export function addNumbers(...args) {
     return args.reduce((sum, num) => sum + num, 0);
 }

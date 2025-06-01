@@ -1,21 +1,17 @@
-import axios from "axios";
-
-exports.main = async (context) => {
-  console.log('hi')
+export const main = async (context) => {
   return {
     statusCode: 200,
     body: {
       message: `SQUAWK: ${context.params.message}`,
     },
-  };
-};
-
+  }
+}
 
 // exports.main = (context, sendResponse) => {
 //   try {
 //     const message = context.params.message || 'Hello!';
 //     console.log('Parrot function called with message:', message);
-    
+
 //     sendResponse({
 //       statusCode: 200,
 //       body: JSON.stringify({
@@ -38,4 +34,3 @@ exports.main = async (context) => {
 //     });
 //   }
 // };
-
