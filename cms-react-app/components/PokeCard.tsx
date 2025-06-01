@@ -1,22 +1,22 @@
-import pokeCardStyles from '../styles/pokecard.module.css';
-import { getTypeColor, PokemonTypes } from '../utils/index.js';
+import React from 'react'
+import pokeCardStyles from './styles/pokecard.module.css'
+import { getTypeColor, PokemonTypes } from '../utils/index.js'
 
 type PokemonData = {
-  pokemonName: string;
-  height: number;
-  weight: number;
-  profileImage: string;
-  pokemonType: PokemonTypes;
-};
+  pokemonName: string
+  height: number
+  weight: number
+  profileImage: string
+  pokemonType: PokemonTypes
+}
 
 type PokeCardProps = {
-  pokemonData: PokemonData;
-};
+  pokemonData: PokemonData
+}
 
 export default function PokeCard({ pokemonData }: PokeCardProps) {
-  const { pokemonName, height, weight, profileImage, pokemonType } =
-    pokemonData;
-  const typeColor = getTypeColor(pokemonType);
+  const { pokemonName, height, weight, profileImage, pokemonType } = pokemonData
+  const typeColor = getTypeColor(pokemonType)
 
   return (
     <div className={pokeCardStyles.wrapper}>
@@ -41,5 +41,5 @@ export default function PokeCard({ pokemonData }: PokeCardProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }
