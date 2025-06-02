@@ -1,7 +1,6 @@
 import homeStyles from '../../styles/home.module.css';
-
-import Layout from '../Layout.jsx';
-import HubSpotSprocket from '../HubSpotSprocket.jsx';
+import Layout from '../Layout.jsx'
+import HubSpotSprocket from '../HubSpotSprocket.jsx'
 
 function Home() {
   return (
@@ -10,7 +9,7 @@ function Home() {
         <HubSpotSprocket link={'https://hubspot.com'} />
       </div>
     </Layout>
-  );
+  )
 }
 
-export default Home;
+export default Home

@@ -1,5 +1,4 @@
-import styles from 'cms-react-app/styles/counter.module.css';
-
+import styles from '../../styles/counter.module.css';
 import { useState } from 'react';
 
 export function addNumbers(...args) {

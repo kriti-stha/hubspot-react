@@ -1,5 +1,5 @@
 import React from 'react'
-import pokeCardStyles from './styles/pokecard.module.css'
+import pokeCardStyles from '../styles/pokecard.module.css'
 import { getTypeColor, PokemonTypes } from '../utils/index.js'
 
 type PokemonData = {

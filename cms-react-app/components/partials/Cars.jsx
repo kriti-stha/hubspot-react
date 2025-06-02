@@ -1,11 +1,11 @@
-import Layout from '../Layout.jsx';
+import Layout from '../Layout.jsx'
 
-import styles from '../../styles/cars.module.css';
+import styles from 'cms-react-app/styles/cars.module.css'
 
-import tacoma from '../../assets/tacoma.jpg';
-import vwid from '../../assets/vw-id.jpg';
-import orangeLine from '../../assets/orange-line.jpg';
-import huayra from '../../assets/huayra.jpg';
+import tacoma from '../../assets/tacoma.jpg'
+import vwid from '../../assets/vw-id.jpg'
+import orangeLine from '../../assets/orange-line.jpg'
+import huayra from '../../assets/huayra.jpg'
 
 const cars = [
   {
@@ -52,7 +52,7 @@ const cars = [
       lastname: 'Boamah',
     },
   },
-];
+]
 
 function Cars() {
   return (
@@ -78,11 +78,11 @@ function Cars() {
                 </div>
               </div>
             </div>
-          );
+          )
         })}
       </div>
     </Layout>
-  );
+  )
 }
 
-export default Cars;
+export default Cars
