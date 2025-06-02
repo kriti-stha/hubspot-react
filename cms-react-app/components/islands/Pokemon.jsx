@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import componentStyles from '../styles/component.module.css'
+import componentStyles from '../../styles/component.module.css'
 import PokeCard from '../PokeCard.tsx'
 
 const Pokemon = ({ inputText, pokemonField, pokemonList }) => {
