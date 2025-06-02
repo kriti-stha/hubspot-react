@@ -1,4 +1,4 @@
-import headerStyles from '../styles/header.module.css'
+import headerStyles from '../../styles/header.module.css';
 
 function Header({
   brandColor = {

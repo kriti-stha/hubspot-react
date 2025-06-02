@@ -1,4 +1,4 @@
-import styles from '../styles/counter.module.css';
+import styles from '../../styles/counter.module.css';
 
 import { useState } from 'react';
 
