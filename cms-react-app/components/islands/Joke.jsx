@@ -1,5 +1,6 @@
 // Import stylesheet
 import styles from '../../styles/counter.module.css';
+
 import { useEffect, useState } from 'react'
 
 export function addNumbers(...args) {

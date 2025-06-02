@@ -1,4 +1,5 @@
 import headerStyles from '../../styles/header.module.css';
+
 function Header({
   brandColor = {
     opacity: 100,
