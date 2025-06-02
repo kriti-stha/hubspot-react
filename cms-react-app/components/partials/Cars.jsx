@@ -1,8 +1,6 @@
 import Layout from '../Layout.jsx'
 
-
-import styles from '../styles/cars.module.css'
-
+import styles from '../../styles/cars.module.css'
 import tacoma from '../../assets/tacoma.jpg'
 import vwid from '../../assets/vw-id.jpg'
 import orangeLine from '../../assets/orange-line.jpg'
