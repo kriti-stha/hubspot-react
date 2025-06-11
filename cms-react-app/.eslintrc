@@ -9,21 +9,17 @@
     "plugin:import/typescript"
   ],
   "plugins": ["@typescript-eslint", "react", "prettier", "import"],
-  "globals": {
-    "console": "readonly"
-  },
   "rules": {
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "import/no-absolute-path": "error",
-    "import/no-relative-parent-imports": "off",
-    "semi": "off",
-    "object-curly-spacing": "off",
+    "import/no-relative-parent-imports": "error",
     "import/order": [
       "error",
       {
         "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always",
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true
