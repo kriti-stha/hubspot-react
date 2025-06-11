@@ -1,6 +1,5 @@
-import { Island } from '@hubspot/cms-components';
-import MakeServerlessRequestIsland from '../../islands/MakeServerlessRequestIsland.jsx?island';
-
+import { Island } from '@hubspot/cms-components'
+import MakeServerlessRequestIsland from '../../islands/MakeServerlessReq.jsx?island'
 
 export function Component() {
   return (

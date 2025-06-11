@@ -7,10 +7,14 @@
 //   }
 // }
 
+import { logInfo } from "@hubspot/cms-components";
+
 export const main = (context, sendResponse) => {
   try {
     const message = context.params.message || 'Hello!';
+    logInfo('Parrot function called with message:', message);
     console.log('Parrot function called with message:', message);
+
 
     sendResponse({
       statusCode: 200,
