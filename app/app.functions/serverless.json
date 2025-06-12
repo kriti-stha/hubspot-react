@@ -29,9 +29,12 @@
         "method": ["GET"]
       }
     },
-    "test": {
-      "method": "GET",
-      "file": "test.js"
+    "logbook": {
+      "file": "logbook-data.js",
+      "endpoint": {
+        "path": "logbook",
+        "method": ["GET"]
+      }
     }
   }
 }

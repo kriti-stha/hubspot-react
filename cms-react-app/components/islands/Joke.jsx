@@ -1,7 +1,6 @@
 // Import stylesheet
-import styles from '../../styles/counter.module.css';
-
 import { useEffect, useState } from 'react'
+import styles from '../../styles/counter.module.css'
 
 export function addNumbers(...args) {
   return args.reduce((sum, num) => sum + num, 0)
