@@ -1,4 +1,4 @@
-import axios from 'axios'
+const axios = require("axios");
 
 exports.main = (context, sendResponse) => {
   axios
@@ -7,17 +7,15 @@ exports.main = (context, sendResponse) => {
       sendResponse({
         statusCode: 200,
         body: { response: response.data },
-      })
+      });
     })
     .catch((error) => {
       sendResponse({
         statusCode: error.response?.status || 500,
         body: {
           error:
-            error.response?.data?.message || 'Failed to fetch Pokemon data',
+            error.response?.data?.message || "Failed to fetch Pokemon data",
         },
-      })
-    })
-}
-
-
+      });
+    });
+};
