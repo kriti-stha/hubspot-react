@@ -28,6 +28,10 @@
         "path": "pokemon",
         "method": ["GET"]
       }
+    },
+    "test": {
+      "method": "GET",
+      "file": "test.js"
     }
   }
 }
