@@ -1,0 +1,33 @@
+{
+  "appFunctions": {
+    "quote-function": {
+      "file": "function.js",
+      "secrets": [],
+      "endpoint": {
+        "path": "fetch-quote",
+        "method": ["GET"]
+      },
+      "parrot": {
+        "file": "parrot-function.js",
+        "endpoint": {
+          "path": "parrot",
+          "method": ["GET"]
+        }
+      },
+      "joke": {
+        "file": "joke.js",
+        "endpoint": {
+          "path": "getJoke",
+          "method": ["GET"]
+        }
+      },
+      "pokemon": {
+        "file": "pokemon.js",
+        "endpoint": {
+          "path": "pokemon",
+          "method": ["GET"]
+        }
+      }
+    }
+  }
+}
