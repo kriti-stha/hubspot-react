@@ -1,18 +1,4 @@
 {
   "label": "CMS React Assets",
-  "outputPath": "cms-react-app/templates",
-  "modules": [
-    {
-      "name": "MakeServerlessRequestIsland",
-      "label": "Make Serverless Request Island",
-      "js": {
-        "components": [
-          {
-            "name": "MakeServerlessRequestIsland",
-            "path": "components/Islands/makeserverlessreq.jsx"
-          }
-        ]
-      }
-    }
-  ]
+  "outputPath": "cms-react-app/templates"
 }
