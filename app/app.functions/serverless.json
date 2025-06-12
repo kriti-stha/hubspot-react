@@ -13,20 +13,20 @@
           "path": "parrot",
           "method": ["GET"]
         }
-      },
-      "joke": {
-        "file": "joke.js",
-        "endpoint": {
-          "path": "getJoke",
-          "method": ["GET"]
-        }
-      },
-      "pokemon": {
-        "file": "pokemon.js",
-        "endpoint": {
-          "path": "pokemon",
-          "method": ["GET"]
-        }
+      }
+    },
+    "joke": {
+      "file": "joke.js",
+      "endpoint": {
+        "path": "getJoke",
+        "method": ["GET"]
+      }
+    },
+    "pokemon": {
+      "file": "pokemon.js",
+      "endpoint": {
+        "path": "pokemon",
+        "method": ["GET"]
       }
     }
   }
