@@ -1,7 +1,6 @@
 import axios from "axios";
 
 exports.main = ({ accountId }, sendResponse) => {
-  console.error('Fetching joke...');
   axios
     .get("https://official-joke-api.appspot.com/random_joke", {
     })
