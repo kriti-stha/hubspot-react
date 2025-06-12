@@ -1,20 +1,22 @@
-
-import axios from "axios";
+import axios from 'axios'
 
 exports.main = (context, sendResponse) => {
-  axios.get(`https://pokeapi.co/api/v2/pokemon/2`)
-    .then(response => {
+  axios
+    .get(`https://pokeapi.co/api/v2/pokemon/2`)
+    .then(function (response) {
       sendResponse({
         statusCode: 200,
-        body: response.data
-      });
+        body: { response: response.data },
+      })
     })
-    .catch(error => {
+    .catch((error) => {
       sendResponse({
         statusCode: error.response?.status || 500,
-        body: { 
-          error: error.response?.data?.message || 'Failed to fetch Pokemon data'
-        }
-      });
-    });
-};
+        body: {
+          error:
+            error.response?.data?.message || 'Failed to fetch Pokemon data',
+        },
+      })
+    })
+}
+
