@@ -6,15 +6,17 @@ exports.main = (context, sendResponse) => {
     .then(function (response) {
       return {
         statusCode: 200,
-        body: { response: response.data },
+        body: { response },
+        headers: {
+          "Content-Type": "application/json",
+        },
       };
     })
     .catch((error) => {
       return {
-        statusCode: error.response?.status || 500,
+        statusCode:500,
         body: {
-          error:
-            error.response?.data?.message || "Failed to fetch Pokemon data",
+          error
         },
       };
     });
