@@ -1,5 +1,5 @@
 {
-  "name": "Serverless functions",
+  "name": "Serverless functions - kriti ",
   "description": "This app runs a serverless function.",
   "scopes": ["crm.objects.contacts.read", "crm.objects.contacts.write","tickets"],
   "uid": "serverless-function-app",
