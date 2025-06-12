@@ -7,34 +7,26 @@
 //   }
 // }
 
-import { logInfo } from "@hubspot/cms-components";
+import { logInfo } from '@hubspot/cms-components'
 
-export const main = (context, sendResponse) => {
+exports.main = (context, sendResponse) => {
   try {
-    const message = context.params.message || 'Hello!';
-    logInfo('Parrot function called with message:', message);
-    console.log('Parrot function called with message:', message);
-
+    const message = context.params.message || 'Hello!'
+    logInfo('Parrot function called with message:', message)
 
     sendResponse({
       statusCode: 200,
-      body: JSON.stringify({
-        message: `SQUAWK: ${message}`
-      }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+      body: {
+        message: `SQUAWK: ${message}`,
+      },
+    })
   } catch (error) {
-    console.error('Error in parrot function:', error);
+    console.error('Error in parrot function:', error)
     sendResponse({
       statusCode: 500,
-      body: JSON.stringify({
-        error: 'Something went wrong'
-      }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+      body: {
+        error: 'Something went wrong',
+      },
+    })
   }
-};
+}

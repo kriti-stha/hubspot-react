@@ -6,13 +6,21 @@ export default function MakeServerlessRequestIsland() {
 
   async function makeRequestToProjectFunction(event) {
     event.preventDefault()
-    const response = await fetch(`/_hcms/api/parrot?message=${message}`)
-    const jsonResponse = await response.json()
-    console.log({ response, jsonResponse })
-    setData([...data, jsonResponse.message])
+    try {
+      const response = await fetch(`/_hcms/api/parrot?message=${message}`)
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      const jsonResponse = await response.json()
+      console.log('Response:', jsonResponse)
+      setData([...data, jsonResponse.message])
+    } catch (error) {
+      console.error('Error making request:', error)
+      setData([...data, `Error: ${error.message}`])
+    }
   }
 
-  console.log({data})
+  console.log({ data })
 
   return (
     <>
